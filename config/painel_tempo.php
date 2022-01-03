@@ -11,13 +11,7 @@
             } else {
 
                 if ($t['umidade'] >= 60 && $t['temperatura'] <= 30) {
-                    if ($t['umidade'] >= 80 && $t['luminosidade'] <= 2000) {
-                        echo "<img class=\"icon-tempo\" src=\"assets/img/weather-icons/rain.png\" alt=\"tempo\">\n";
-                    }
-                    else {
-                        echo "<img class=\"icon-tempo\" src=\"assets/img/weather-icons/cloudy-day.png\" alt=\"tempo\">\n";
-                    }
-
+                    echo "<img class=\"icon-tempo\" src=\"assets/img/weather-icons/cloudy-day.png\" alt=\"tempo\">\n";
                 } else {
                     echo "<img class=\"icon-tempo\" src=\"assets/img/weather-icons/sun.png\" alt=\"tempo\">\n";
                 }
@@ -28,7 +22,7 @@
 
     <div class="temperatura">
         <p class="descricao-icon">temperatura</p>
-        <a onclick="addGraficoTemperatura();"><img class="icon-termometro" src="assets/img/weather-icons/celsius.png" alt="celcius"></a>
+        <img class="icon-termometro" src="assets/img/weather-icons/celsius.png" alt="celcius">
         <p>
             <?php
                 echo number_format($t['temperatura'], 1, ",", ".").' °C';
@@ -38,7 +32,7 @@
 
     <div class="humidade">
         <p class="descricao-icon">umidade</p>
-        <a onclick="addGraficoUmidade();"><img class="icon-umidade" src="assets/img/weather-icons/humidity.png" alt="umidade"></a>
+        <img class="icon-umidade" src="assets/img/weather-icons/humidity.png" alt="umidade">
         <p>
             <?php
                 echo number_format($t['umidade'], 1, ",", ".").' %';
@@ -48,7 +42,7 @@
 
     <div class="pressao">
         <p class="descricao-icon">pressão atm.</p>
-        <a onclick="addGraficoPressao();"><img class="icon-pressao" src="assets/img/weather-icons/pressure.png" alt="pressao"></a>
+        <img class="icon-pressao" src="assets/img/weather-icons/pressure.png" alt="pressao">
         <p>
             <?php
                 echo number_format($t['pressao'], 2, ",", ".").' hPa';
@@ -58,7 +52,7 @@
 
     <div class="lum">
         <p class="descricao-icon">luminosidade</p>
-        <a onclick="addGraficoLuminosidade();"><img class="icon-lum" src="assets/img/weather-icons/lamp.png" alt="pressao"></a>
+        <img class="icon-lum" src="assets/img/weather-icons/lamp.png" alt="pressao">
         <p>
             <?php
                 echo number_format($t['luminosidade'], 1, ",", ".").' lm';
@@ -74,7 +68,4 @@
             echo date_format($hora, 'H:i')
         ?>
     </p>
-</div>
-
-<div id="grafico">
 </div>

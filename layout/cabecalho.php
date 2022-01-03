@@ -20,4 +20,3 @@
         </div>
     </div>
 </nav>
-<div class="empty-space"></div>

@@ -1,13 +1,6 @@
 
 nav {
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    width: 80%;
-
     background-color: var(--verde-claro);
     padding: 0 10%;
     justify-content: space-between;
@@ -99,10 +92,6 @@ i {
     font-family: "Roboto", 'sans-serif';
 }
 
-.empty-space {
-    padding-top: 6rem;
-}
-
 @media only screen and (max-width: 1180px) {
     .bar {
         margin-left: 0;
@@ -113,14 +102,6 @@ i {
 @media only screen and (max-width: 850px) {
     body {
         font-size: 1rem !important;
-    }
-
-    nav {
-        height: 4.5rem;
-    }
-
-    .empty-space {
-        padding-top: 4.5rem;
     }
 
     .bar a {

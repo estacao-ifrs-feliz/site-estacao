@@ -1,9 +1,7 @@
-<!--http://localhost/prototipo-estacao-meteorologica/-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <?php include 'layout/global_head.php' ?>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     
     <link rel="stylesheet" href="./assets/css/estacao-painel.css">
     <link rel="stylesheet" href="./assets/css/tabela-valores.css">
